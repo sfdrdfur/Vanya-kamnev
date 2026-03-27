@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALACE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+
+<body>
+    <section class="screen screen-1">
+        <div class="title">
+            <p>PALACE</p>
+        </div>
+        <div class="title2">
+            <p>PA</p>
+            <p>LA</p>
+            <p>CE</p>
+        </div>
+    </section>
+
+    <section class="screen screen-2">
+        <div id="cherep-modal" class="modal hidden">
+            <p>Cлучай невролога Оливера Сакса. Музыкант-профессионал с агнозией пытался надеть на голову собственную
+                жену, приняв её за головной убор.</p>
+        </div>
+        <div class="row2">
+            <div class="title3">
+                <div class="cherep">
+                    <p>ЧЕРЕП</p>
+                </div>
+                <div class=" cherep reverse">
+                    <p>ЧЕРЕП</p>
+                </div>
+            </div>
+
+            <div class="puzzle-container">
+                <div class="puzzle-pieces" id="puzzle-pieces">
+                    <img src="assets/piece1.svg" class="piece" draggable="true" id="p1" alt="part">
+                    <img src="assets/piece2.svg" class="piece" draggable="true" id="p2" alt="part">
+                    <img src="assets/piece3.svg" class="piece" draggable="true" id="p3" alt="part">
+                    <img src="assets/piece4.svg" class="piece" draggable="true" id="p4" alt="part">
+                </div>
+                <div class="drop-zone" id="drop-zone">
+                    <img src="assets/skull-complete.svg" id="skull-complete" class="hidden" alt="full skull">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="screen screen-3">
+        <div class="bg-text">АГНОЗИЯ</div>
+
+        <div id="game-modal" class="modal hidden">
+            <p id="game-task">Найди: Кота</p>
+            <button id="start-game-btn">Начать</button>
+        </div>
+
+        <div id="result-modal" class="modal hidden">
+            <h2 id="result-title"></h2>
+            <p id="result-text"></p>
+        </div>
+
+        <div class="game-area-smooth" id="game-area">
+            <div class="game-item-smooth" data-id="cat"><img src="assets/cat.svg" alt="cat"></div>
+            <div class="game-item-smooth" data-id="lamp"><img src="assets/lamp.svg" alt="lamp"></div>
+            <div class="game-item-smooth" data-id="hat"><img src="assets/hat.svg" alt="hat"></div>
+        </div>
+    </section>
+
+    <section class="screen screen-4">
+        <div class="bg-text">ТЕРАПИЯ</div>
+
+        <div id="therapy-modal" class="modal hidden">
+            <p>гугугага</p>
+        </div>
+
+        <div class="tangle-container" id="tangle-container">
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <p>Камнев Иван</p>
+                <p>БРИЦП 252</p>
+            </div>
+            <div class="column">
+                <p>HSE Art</p>
+                <p>and design school</p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
