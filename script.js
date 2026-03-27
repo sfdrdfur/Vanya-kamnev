@@ -101,6 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     {
                         skullComplete.classList.remove('hidden'); 
                         cherepModal.classList.remove('hidden');
+
+                        setTimeout(() => {
+                            cherepModal.classList.add('hidden');
+                            skullComplete.classList.add('hidden');
+                            dropZone.style.border = '';
+                            pieces.forEach(p => p.classList.remove('dropped'));
+                            droppedCount = 0;
+                        }, 7000);
                     }
                 }
             }
